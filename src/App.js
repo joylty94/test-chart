@@ -6,7 +6,7 @@ import GoogleChart from './components/GoogleChart';
 function App() {
   return (
     <div className="App">
-      <GoogleChart></GoogleChart>
+      <TestChart></TestChart>
     </div>
   );
 }
