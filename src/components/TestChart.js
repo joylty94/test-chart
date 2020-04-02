@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback, useMemo} from 'react';
 import styled from 'styled-components';
 import {randomColor} from 'randomcolor';
 
@@ -13,7 +13,7 @@ const ChartBar = styled.div`
 
 
 const TestChart = () => {
-    const color = ['red', 'blue', 'green', 'black']
+    //const color = ['red', 'blue', 'green', 'black']
     const [data, setData] = useState(['10px', '5px', '3px', '2px']);
     // const []
     useEffect(() => {
@@ -28,11 +28,14 @@ const TestChart = () => {
         }, 500)
     }, [])
     
-    console.log()
+    // const useColor = useMemo(() =>{
+    //     const color = randomColor();
+    //     return color
+    // }, [color])
+    // console.log()
     return(
         <div style={{width: 500, height: 400, backgroundColor:'skyblue'}}>
             { data.length >= 1 && data.map((p, i) => {
-                console.log(randomColor())
                 return(
                     <div key={i} style={{marginBottom:'10px'}}>
                         <ChartBar size={data[i]} color={randomColor()}></ChartBar>
