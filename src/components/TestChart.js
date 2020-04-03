@@ -4,14 +4,22 @@ import {randomColor} from 'randomcolor';
 
 const ChartWrap = styled.div`
     background-color:skyblue;
-    padding: 20px 0 10px;
     opacity: 0;
     transition: opacity 2s;
+    position: relative;
+    height: 500px;
 
     &.on{
         opacity: 1;
     }
 `
+const ChartBarWrap = styled.div`
+    transition: all 300ms ease-in;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: ${props => props.top};
+`;
 
 const ChartBar = styled.div`
     width: ${props => props.size};
@@ -24,46 +32,88 @@ const ChartBar = styled.div`
 
 
 const TestChart = () => {
-    //const color = ['red', 'blue', 'green', 'black']
-    const [data, setData] = useState(['10px', '5px', '3px', '2px']);
+
+    const [data, setData] = useState(['10', '5', '3', '2']);
     const [mount, setMount] = useState(false);
-    // const []
+    const [topPosition, setTopPosition] = useState([30, 80, 130, 180])
+  
 
     useEffect(()=>{
         setMount(true)
     },[])
 
-    // function* numberGen() {
-    //     yield 1;
-    //     yield 2;
-    //     yield 3;
-    // }
+    const sortChart = (arr) => {
+        const newArr = [...topPosition];
+        const newDataArr = [...arr]
+        let temp;
+        let temp2;
+
+        for (let i = 0; i < arr.length - 1 ; i++) {
+            for (let j = i + 1; j < arr.length ; j++) {
+                if (parseInt(arr[i]) < parseInt(arr[j])) {
+                    temp = newArr[j];
+                    newArr[j] = newArr[i];
+                    newArr[i] = temp;
+                }
+            }
+        }
+
+        for (let i = 0; i < arr.length - 1; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (parseInt(arr[i]) < parseInt(arr[j])) {
+                    console.log(i, j)
+                    console.log(newDataArr[i], newDataArr[j])
+                    temp2 = newDataArr[j];
+                    newDataArr[j] = newDataArr[i];
+                    newDataArr[i] = temp2;
+                }
+            }
+        }
+        console.log(arr)
+        console.log(newDataArr)
+        console.log(newArr)
+        setTopPosition(newArr)
+    }
 
     useEffect(() => {
-        setTimeout(() => {
-            setData(['50px', '10px', '12px', '8px'])
+        // setTimeout(() => {
+        //     sortChart(['50', '10', '12', '8'])
+        //     setData(['50', '10', '12', '8'])
             setTimeout(() => {
-                setData(['80px', '21px', '92px', '26px'])
-                setTimeout(() => {
-                    setData(['130px', '23px', '111px', '31px'])
-                },500)
-            },500)
-        }, 1000)
+                sortChart(['80', '21', '92', '26'])
+                setData(['80', '21', '92', '26'])
+                // setTimeout(() => {
+                //     sortChart(['130', '23', '111', '31'])
+                //     setData(['130', '23', '111', '31'])
+                //     setTimeout(() => {
+                //         sortChart(['150', '40', '131', '50'])
+                //         setData(['150', '40', '131', '50'])
+                //         setTimeout(() => {
+                //             sortChart(['210', '70', '221', '70'])
+                //             setData(['210', '70', '221', '70'])
+                //             setTimeout(() => {
+                //                 sortChart(['330', '82', '281', '122'])
+                //                 setData(['330', '82', '281', '122'])
+                //             },1000)
+                //         },1000)
+                //     },1000)
+                // },1000)
+            },1000)
+        // }, 1000)
     }, [mount])
     
-    // const useColor = useMemo(() =>{
-    //     const color = randomColor();
-    //     return color
-    // }, [color])
-    // console.log()
+    const useColor = useCallback(() =>{
+        return randomColor();
+    }, [])
+    //console.log(data)
     return(
         <ChartWrap className={mount && 'on'}>
             { data.length >= 1 && data.map((p, i) => {
                 return(
-                    <div key={i} style={{marginBottom:'10px'}}>
-                        <ChartBar size={data[i]} color={randomColor()}></ChartBar>
-                        <span style={{verticalAlign:'middle'}}>{data[i].split('p')[0]}명</span>
-                    </div>
+                    <ChartBarWrap key={i} top={`${topPosition[i]}px`}>
+                        <ChartBar size={`${data[i]}px`} color={useColor} ></ChartBar>
+                        <span style={{verticalAlign:'middle'}}>{data[i]}명</span>
+                    </ChartBarWrap>
                 )
             })}
         </ChartWrap>
