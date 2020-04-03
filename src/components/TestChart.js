@@ -33,7 +33,7 @@ const ChartBar = styled.div`
 
 const TestChart = () => {
 
-    const [data, setData] = useState(['10', '5', '3', '2']);
+    const [data, setData] = useState([]);
     const [mount, setMount] = useState(false);
     const [topPosition, setTopPosition] = useState([30, 80, 130, 180])
   
@@ -42,35 +42,53 @@ const TestChart = () => {
         setMount(true)
     },[])
 
+    
+
     const sortChart = (arr) => {
         const newArr = [...topPosition];
         const newDataArr = [...arr]
         let temp;
         let temp2;
+        let a = [1,2,3,4];
 
-        for (let i = 0; i < arr.length - 1 ; i++) {
-            for (let j = i + 1; j < arr.length ; j++) {
-                if (parseInt(arr[i]) < parseInt(arr[j])) {
-                    temp = newArr[j];
-                    newArr[j] = newArr[i];
-                    newArr[i] = temp;
-                }
-            }
-        }
-
-        for (let i = 0; i < arr.length - 1; i++) {
-            for (let j = i + 1; j < arr.length; j++) {
-                if (parseInt(arr[i]) < parseInt(arr[j])) {
+        for (let i = 0; i < newDataArr.length - 1 ; i++) {
+            for (let j = i + 1; j < newDataArr.length ; j++) {
+                if (parseInt(newDataArr[i]) < parseInt(newDataArr[j])) {
                     console.log(i, j)
                     console.log(newDataArr[i], newDataArr[j])
+                    console.log(newArr[i], newArr[j])
+                    
                     temp2 = newDataArr[j];
                     newDataArr[j] = newDataArr[i];
                     newDataArr[i] = temp2;
+                    
+                    // temp = newArr[j];
+                    // newArr[j] = newArr[i];
+                    // newArr[i] = temp;
+
+                    temp = a[j];
+                    a[j] = a[i];
+                    a[i] = temp;
+
                 }
             }
         }
+
+        // for (let i = 0; i < arr.length - 1; i++) {
+        //     for (let j = i + 1; j < arr.length; j++) {
+        //         if (parseInt(arr[i]) < parseInt(arr[j])) {
+        //             console.log(i, j)
+        //             console.log(newDataArr[i], newDataArr[j])
+        //             temp2 = newDataArr[j];
+        //             newDataArr[j] = newDataArr[i];
+        //             newDataArr[i] = temp2;
+        //         }
+        //     }
+        // }
+        console.log(a)
         console.log(arr)
         console.log(newDataArr)
+        console.log(topPosition)
         console.log(newArr)
         setTopPosition(newArr)
     }
@@ -79,26 +97,26 @@ const TestChart = () => {
         // setTimeout(() => {
         //     sortChart(['50', '10', '12', '8'])
         //     setData(['50', '10', '12', '8'])
-            setTimeout(() => {
-                sortChart(['80', '21', '92', '26'])
-                setData(['80', '21', '92', '26'])
-                // setTimeout(() => {
-                //     sortChart(['130', '23', '111', '31'])
-                //     setData(['130', '23', '111', '31'])
+            // setTimeout(() => {
+            //     sortChart(['80', '21', '92', '26'])
+            //     setData(['80', '21', '92', '26'])
+                setTimeout(() => {
+                    sortChart(['130', '23', '111', '31'])
+                    setData(['130', '23', '111', '31'])
                 //     setTimeout(() => {
                 //         sortChart(['150', '40', '131', '50'])
                 //         setData(['150', '40', '131', '50'])
                 //         setTimeout(() => {
-                //             sortChart(['210', '70', '221', '70'])
-                //             setData(['210', '70', '221', '70'])
+                //             sortChart(['210', '60', '221', '70'])
+                //             setData(['210', '60', '221', '70'])
                 //             setTimeout(() => {
                 //                 sortChart(['330', '82', '281', '122'])
                 //                 setData(['330', '82', '281', '122'])
                 //             },1000)
                 //         },1000)
                 //     },1000)
-                // },1000)
-            },1000)
+                },1000)
+            // },1000)
         // }, 1000)
     }, [mount])
     
