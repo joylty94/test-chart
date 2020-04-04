@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback, useMemo} from 'react';
+import React, {useState, useEffect, useCallback, useMemo, useRef} from 'react';
 import styled from 'styled-components';
 import {randomColor} from 'randomcolor';
 
@@ -14,7 +14,7 @@ const ChartWrap = styled.div`
     }
 `
 const ChartBarWrap = styled.div`
-    transition: all 300ms ease-in;
+    transition: all 400ms ease-in;
     display: inline-block;
     vertical-align: middle;
     position: absolute;
@@ -35,102 +35,191 @@ const TestChart = () => {
 
     const [data, setData] = useState([]);
     const [mount, setMount] = useState(false);
-    const [topPosition, setTopPosition] = useState([30, 80, 130, 180])
+    const [topPosition, setTopPosition] = useState()
+    const colorSet = useRef([randomColor(), randomColor(), randomColor(), randomColor()])
   
-
     useEffect(()=>{
         setMount(true)
     },[])
 
-    
-
     const sortChart = (arr) => {
-        const newArr = [...topPosition];
         const newDataArr = [...arr]
         let temp;
         let temp2;
-        let a = [1,2,3,4];
+        const rank = newDataArr.map((a, i) => {
+            return i + 1;
+        });
 
         for (let i = 0; i < newDataArr.length - 1 ; i++) {
             for (let j = i + 1; j < newDataArr.length ; j++) {
-                if (parseInt(newDataArr[i]) < parseInt(newDataArr[j])) {
-                    console.log(i, j)
-                    console.log(newDataArr[i], newDataArr[j])
-                    console.log(newArr[i], newArr[j])
+                if (parseInt(newDataArr[i]['COVID']) < parseInt(newDataArr[j]['COVID'])) {
                     
                     temp2 = newDataArr[j];
                     newDataArr[j] = newDataArr[i];
                     newDataArr[i] = temp2;
-                    
-                    // temp = newArr[j];
-                    // newArr[j] = newArr[i];
-                    // newArr[i] = temp;
 
-                    temp = a[j];
-                    a[j] = a[i];
-                    a[i] = temp;
+                    temp = rank[j];
+                    rank[j] = rank[i];
+                    rank[i] = temp;
 
                 }
             }
         }
 
-        // for (let i = 0; i < arr.length - 1; i++) {
-        //     for (let j = i + 1; j < arr.length; j++) {
-        //         if (parseInt(arr[i]) < parseInt(arr[j])) {
-        //             console.log(i, j)
-        //             console.log(newDataArr[i], newDataArr[j])
-        //             temp2 = newDataArr[j];
-        //             newDataArr[j] = newDataArr[i];
-        //             newDataArr[i] = temp2;
-        //         }
-        //     }
-        // }
-        console.log(a)
-        console.log(arr)
-        console.log(newDataArr)
-        console.log(topPosition)
-        console.log(newArr)
-        setTopPosition(newArr)
+        const rankPosition = Array(rank.length).fill()
+        rank.map((p, i) => {
+            rankPosition[p - 1] = (i + 1) * 50;
+        })
+
+        setTopPosition(rankPosition)
     }
 
+    const Json = [
+        {
+            'date': '',
+            'COVID':[
+                {
+                    'COVID' : 50,
+                    'state' : '중국'
+                },
+                {
+                    'COVID' : 30,
+                    'state' : '일본'
+                },
+                {
+                    'COVID' : 10,
+                    'state' : '한국'
+                },
+                {
+                    'COVID' : 5,
+                    'state' : '미국'
+                }
+            ]
+        },
+        {
+            'date': '',
+            'COVID':[
+                {
+                    'COVID' : 110,
+                    'state' : '중국'
+                },
+                {
+                    'COVID' : 50,
+                    'state' : '일본'
+                },
+                {
+                    'COVID' : 80,
+                    'state' : '한국'
+                },
+                {
+                    'COVID' : 15,
+                    'state' : '미국'
+                }
+            ]
+        },
+        {
+            'date': '',
+            'COVID':[
+                {
+                    'COVID' : 250,
+                    'state' : '중국'
+                },
+                {
+                    'COVID' : 80,
+                    'state' : '일본'
+                },
+                {
+                    'COVID' : 121,
+                    'state' : '한국'
+                },
+                {
+                    'COVID' : 30,
+                    'state' : '미국'
+                }
+            ]
+        },
+        {
+            'date': '',
+            'COVID':[
+                {
+                    'COVID' : 380,
+                    'state' : '중국'
+                },
+                {
+                    'COVID' : 170,
+                    'state' : '일본'
+                },
+                {
+                    'COVID' : 192,
+                    'state' : '한국'
+                },
+                {
+                    'COVID' : 93,
+                    'state' : '미국'
+                }
+            ]
+        },
+        {
+            'date': '',
+            'COVID':[
+                {
+                    'COVID' : 561,
+                    'state' : '중국'
+                },
+                {
+                    'COVID' : 252,
+                    'state' : '일본'
+                },
+                {
+                    'COVID' : 241,
+                    'state' : '한국'
+                },
+                {
+                    'COVID' : 132,
+                    'state' : '미국'
+                }
+            ]
+        },
+        {
+            'date': '',
+            'COVID':[
+                {
+                    'COVID' : 783,
+                    'state' : '중국'
+                },
+                {
+                    'COVID' : 420,
+                    'state' : '일본'
+                },
+                {
+                    'COVID' : 294,
+                    'state' : '한국'
+                },
+                {
+                    'COVID' : 302,
+                    'state' : '미국'
+                }
+            ]
+        },
+    ]
+
     useEffect(() => {
-        // setTimeout(() => {
-        //     sortChart(['50', '10', '12', '8'])
-        //     setData(['50', '10', '12', '8'])
-            // setTimeout(() => {
-            //     sortChart(['80', '21', '92', '26'])
-            //     setData(['80', '21', '92', '26'])
-                setTimeout(() => {
-                    sortChart(['130', '23', '111', '31'])
-                    setData(['130', '23', '111', '31'])
-                //     setTimeout(() => {
-                //         sortChart(['150', '40', '131', '50'])
-                //         setData(['150', '40', '131', '50'])
-                //         setTimeout(() => {
-                //             sortChart(['210', '60', '221', '70'])
-                //             setData(['210', '60', '221', '70'])
-                //             setTimeout(() => {
-                //                 sortChart(['330', '82', '281', '122'])
-                //                 setData(['330', '82', '281', '122'])
-                //             },1000)
-                //         },1000)
-                //     },1000)
-                },1000)
-            // },1000)
-        // }, 1000)
+        Json.forEach((d, i) => {
+            setTimeout(() => {
+                sortChart(d.COVID)
+                setData(d.COVID)
+            }, 1000 * (i+1))
+        })
     }, [mount])
-    
-    const useColor = useCallback(() =>{
-        return randomColor();
-    }, [])
-    //console.log(data)
+
     return(
         <ChartWrap className={mount && 'on'}>
             { data.length >= 1 && data.map((p, i) => {
                 return(
                     <ChartBarWrap key={i} top={`${topPosition[i]}px`}>
-                        <ChartBar size={`${data[i]}px`} color={useColor} ></ChartBar>
-                        <span style={{verticalAlign:'middle'}}>{data[i]}명</span>
+                        <span>{data[i]['state']}</span>
+                        <ChartBar size={`${data[i]['COVID']}px`} color={colorSet.current[i]}></ChartBar>
+                        <span style={{ verticalAlign: 'middle' }}>{data[i]['COVID']}명</span>
                     </ChartBarWrap>
                 )
             })}
