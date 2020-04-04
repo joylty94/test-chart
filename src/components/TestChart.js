@@ -132,24 +132,19 @@ const TestChart = () => {
                     )
                 })}
             </ul>
-            {/* <div style={{ paddingLeft: '60px', height: '40px', marginBottom: '40px', background: '#ddd', borderRight: 'solid 1px #aaa', overflow:'hidden'}}>
-                <span style={{ width: '100px', height: '100%', display: 'inline-block', textAlign: 'right', borderLeft: 'solid 1px #aaa', borderRight: 'solid 1px #aaa'}}></span>
-                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
-                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
-                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
-                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
-                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
-                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
-                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
-                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
-            </div> */}
+            <ul style={{ paddingLeft: '60px', overflow: 'hidden', whiteSpace: 'nowrap'}}>
+                <span>0</span>
+                {Array(15).fill(1).map((n, i) => {
+                    return <li style={{ width: '100px', display: 'inline-block', textAlign: 'right', paddingBottom:'8px' }}><span style={{ marginRight: '-15px' }}>{100 * (i+1)}</span></li>
+                })}
+            </ul>
             <ChartBarWrap>
                 { data.length >= 1 && data.map((p, i) => {
                     return(
                         <ChartBarContainer key={i} top={`${topPosition[i]}px`}>
                             <span style={{width:'60px', textAlign:'center', display:'inline-block'}}>{data[i]['state']}</span>
                             <ChartBar size={`${data[i]['COVID']}px`} color={colorSet.current[i]}></ChartBar>
-                            <span style={{ verticalAlign: 'middle' }}>{data[i]['COVID']}명</span>
+                            <span style={{ width: '60px', verticalAlign:'middle', textAlign: 'center', display: 'inline-block' }}>{data[i]['COVID']}명</span>
                         </ChartBarContainer>
                     )
                 })}
