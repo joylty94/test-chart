@@ -37,9 +37,9 @@ const ChartBar = styled.div`
     transition: all 300ms ease-in;
     display: inline-block;
     vertical-align: middle;
-
+    cursor: pointer;
     &:hover{
-        transform: scaleY(1.2);
+        transform: scaleY(1.1);
     }
 `;
 
@@ -48,6 +48,7 @@ const TestChart = () => {
     const [data, setData] = useState([]);
     const [mount, setMount] = useState(false);
     const [topPosition, setTopPosition] = useState()
+    const [date, setdate] = useState()
     const colorSet = useRef(Array(Json[0]['COVID'].length).fill().map((c, i) => randomColor()))
     let interval = useRef();
     const isMountChart = useRef(true);
@@ -94,6 +95,7 @@ const TestChart = () => {
         } else {            
             Json.forEach((d, i) => {
                 interval.current = setTimeout(() => {
+                    setdate(d.date)
                     sortChart(d.COVID)
                     setData(d.COVID)
                 }, 600 * i)
@@ -106,6 +108,7 @@ const TestChart = () => {
     
     return(
         <ChartWrap className={mount && 'on'}>
+            <div style={{ padding: '40px 60px 0'}}>DATE : {date}</div>
             <ul style={{padding: '40px 60px'}}>
                 { Json[0]['COVID'].length >= 1 && Json[0]['COVID'].map((s, i) => {
                     return(

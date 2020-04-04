@@ -1,6 +1,6 @@
 export const Json = [
     {
-        'date': '',
+        'date': '2019.10',
         'COVID': [
             {
                 'COVID': 50,
@@ -21,7 +21,7 @@ export const Json = [
         ]
     },
     {
-        'date': '',
+        'date': '2019.11',
         'COVID': [
             {
                 'COVID': 110,
@@ -42,7 +42,7 @@ export const Json = [
         ]
     },
     {
-        'date': '',
+        'date': '2019.12',
         'COVID': [
             {
                 'COVID': 250,
@@ -63,7 +63,7 @@ export const Json = [
         ]
     },
     {
-        'date': '',
+        'date': '2020.01',
         'COVID': [
             {
                 'COVID': 380,
@@ -84,7 +84,7 @@ export const Json = [
         ]
     },
     {
-        'date': '',
+        'date': '2020.02',
         'COVID': [
             {
                 'COVID': 561,
@@ -105,7 +105,7 @@ export const Json = [
         ]
     },
     {
-        'date': '',
+        'date': '2020.03',
         'COVID': [
             {
                 'COVID': 783,
