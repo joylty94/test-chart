@@ -15,9 +15,25 @@ export const Json = [
                 'state': '한국'
             },
             {
-                'COVID': 5,
+                'COVID': 15,
                 'state': '미국'
-            }
+            },
+            {
+                'COVID': 21,
+                'state': '이탈리아'
+            },
+            {
+                'COVID': 8,
+                'state': '독일'
+            },
+            {
+                'COVID': 5,
+                'state': '영국'
+            },
+            {
+                'COVID': 11,
+                'state': '스페인'
+            },
         ]
     },
     {
@@ -38,7 +54,23 @@ export const Json = [
             {
                 'COVID': 15,
                 'state': '미국'
-            }
+            },
+            {
+                'COVID': 99,
+                'state': '이탈리아'
+            },
+            {
+                'COVID': 8,
+                'state': '독일'
+            },
+            {
+                'COVID': 5,
+                'state': '영국'
+            },
+            {
+                'COVID': 72,
+                'state': '스페인'
+            },
         ]
     },
     {
@@ -59,7 +91,23 @@ export const Json = [
             {
                 'COVID': 30,
                 'state': '미국'
-            }
+            },
+            {
+                'COVID': 180,
+                'state': '이탈리아'
+            },
+            {
+                'COVID': 68,
+                'state': '독일'
+            },
+            {
+                'COVID': 45,
+                'state': '영국'
+            },
+            {
+                'COVID': 122,
+                'state': '스페인'
+            },
         ]
     },
     {
@@ -80,7 +128,23 @@ export const Json = [
             {
                 'COVID': 93,
                 'state': '미국'
-            }
+            },
+            {
+                'COVID': 226,
+                'state': '이탈리아'
+            },
+            {
+                'COVID': 128,
+                'state': '독일'
+            },
+            {
+                'COVID': 145,
+                'state': '영국'
+            },
+            {
+                'COVID': 272,
+                'state': '스페인'
+            },
         ]
     },
     {
@@ -99,9 +163,25 @@ export const Json = [
                 'state': '한국'
             },
             {
-                'COVID': 132,
+                'COVID': 249,
                 'state': '미국'
-            }
+            },
+            {
+                'COVID': 526,
+                'state': '이탈리아'
+            },
+            {
+                'COVID': 328,
+                'state': '독일'
+            },
+            {
+                'COVID': 295,
+                'state': '영국'
+            },
+            {
+                'COVID': 428,
+                'state': '스페인'
+            },
         ]
     },
     {
@@ -120,9 +200,25 @@ export const Json = [
                 'state': '한국'
             },
             {
-                'COVID': 302,
+                'COVID': 522,
                 'state': '미국'
-            }
+            },
+            {
+                'COVID': 526,
+                'state': '이탈리아'
+            },
+            {
+                'COVID': 416,
+                'state': '독일'
+            },
+            {
+                'COVID': 509,
+                'state': '영국'
+            },
+            {
+                'COVID': 670,
+                'state': '스페인'
+            },
         ]
     },
 ]
