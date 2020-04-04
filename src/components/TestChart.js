@@ -23,7 +23,7 @@ const ChartBarWrap = styled.div`
 `;
 
 const ChartBarContainer = styled.div`
-    transition: all 400ms ease-in;
+    transition: all 600ms ease-in;
     display: inline-block;
     vertical-align: middle;
     position: absolute;
@@ -34,7 +34,7 @@ const ChartBar = styled.div`
     width: ${props => props.size};
     height: 40px;
     background-color: ${props => props.color};
-    transition: all 300ms ease-in;
+    transition: all 600ms ease-in;
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
@@ -49,7 +49,7 @@ const TestChart = () => {
     const [mount, setMount] = useState(false);
     const [topPosition, setTopPosition] = useState()
     const [date, setdate] = useState()
-    const colorSet = useRef(Array(Json[0]['COVID'].length).fill().map((c, i) => randomColor()))
+    const colorSet = useRef(Array(Json[Json.length - 1]['COVID'].length).fill().map((c, i) => randomColor()))
     let interval = useRef();
     const isMountChart = useRef(true);
 
@@ -123,7 +123,7 @@ const TestChart = () => {
         <ChartWrap className={mount && 'on'}>
             <div style={{ padding: '40px 60px 0' }}>DATE : {date} {<button onClick={onClickReset}>Reset</button>}</div>
             <ul style={{padding: '40px 60px'}}>
-                { Json[0]['COVID'].length >= 1 && Json[0]['COVID'].map((s, i) => {
+                { Json[0]['COVID'].length >= 1 && Json[Json.length - 1]['COVID'].map((s, i) => {
                     return(
                             <li style={{display:'inline-block', paddingRight:'8px'}} key={i}>
                                 <div style={{ background: colorSet.current[i], width: '18px', height: '18px', display:'inline-block', verticalAlign:'bottom'}}></div>
@@ -135,7 +135,7 @@ const TestChart = () => {
             <ul style={{ paddingLeft: '60px', overflow: 'hidden', whiteSpace: 'nowrap'}}>
                 <span>0</span>
                 {Array(15).fill(1).map((n, i) => {
-                    return <li style={{ width: '100px', display: 'inline-block', textAlign: 'right', paddingBottom:'8px' }}><span style={{ marginRight: '-15px' }}>{100 * (i+1)}</span></li>
+                    return <li key={i} style={{ width: '100px', display: 'inline-block', textAlign: 'right', paddingBottom:'8px' }}><span style={{ marginRight: '-15px' }}>{100 * (i+1)}</span></li>
                 })}
             </ul>
             <ChartBarWrap>

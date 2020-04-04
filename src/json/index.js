@@ -18,22 +18,7 @@ export const Json = [
                 'COVID': 15,
                 'state': '미국'
             },
-            {
-                'COVID': 21,
-                'state': '이탈리아'
-            },
-            {
-                'COVID': 8,
-                'state': '독일'
-            },
-            {
-                'COVID': 5,
-                'state': '영국'
-            },
-            {
-                'COVID': 11,
-                'state': '스페인'
-            },
+
         ]
     },
     {
