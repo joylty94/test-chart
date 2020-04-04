@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback, useMemo, useRef} from 'react';
+import React, {useState, useEffect, useCallback, useMemo, useRef, useContext} from 'react';
 import styled from 'styled-components';
 import {randomColor} from 'randomcolor';
 import {Json} from '../json';
@@ -105,10 +105,23 @@ const TestChart = () => {
             clearTimeout(interval.current)
         }
     }, [mount])
+
+    const onClickReset = useCallback((e) => {
+        e.preventDefault();
+
+        clearTimeout(interval.current);
+        Json.forEach((d, i) => {
+            interval.current = setTimeout(() => {
+                setdate(d.date)
+                sortChart(d.COVID)
+                setData(d.COVID)
+            }, 600 * i)
+        })
+    }, [])
     
     return(
         <ChartWrap className={mount && 'on'}>
-            <div style={{ padding: '40px 60px 0'}}>DATE : {date}</div>
+            <div style={{ padding: '40px 60px 0' }}>DATE : {date} {<button onClick={onClickReset}>Reset</button>}</div>
             <ul style={{padding: '40px 60px'}}>
                 { Json[0]['COVID'].length >= 1 && Json[0]['COVID'].map((s, i) => {
                     return(
