@@ -3,17 +3,25 @@ import styled from 'styled-components';
 import {randomColor} from 'randomcolor';
 
 const ChartWrap = styled.div`
-    background-color:skyblue;
+    height: 100%;
     opacity: 0;
     transition: opacity 2s;
-    position: relative;
-    height: 500px;
 
     &.on{
         opacity: 1;
     }
 `
 const ChartBarWrap = styled.div`
+    position:relative;
+
+    &::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+`;
+
+const ChartBarContainer = styled.div`
     transition: all 400ms ease-in;
     display: inline-block;
     vertical-align: middle;
@@ -23,20 +31,148 @@ const ChartBarWrap = styled.div`
 
 const ChartBar = styled.div`
     width: ${props => props.size};
-    height: 30px;
+    height: 40px;
     background-color: ${props => props.color};
     transition: all 300ms ease-in;
     display: inline-block;
     vertical-align: middle;
 `;
 
+const Json = [
+    {
+        'date': '',
+        'COVID': [
+            {
+                'COVID': 50,
+                'state': '중국'
+            },
+            {
+                'COVID': 30,
+                'state': '일본'
+            },
+            {
+                'COVID': 10,
+                'state': '한국'
+            },
+            {
+                'COVID': 5,
+                'state': '미국'
+            }
+        ]
+    },
+    {
+        'date': '',
+        'COVID': [
+            {
+                'COVID': 110,
+                'state': '중국'
+            },
+            {
+                'COVID': 50,
+                'state': '일본'
+            },
+            {
+                'COVID': 80,
+                'state': '한국'
+            },
+            {
+                'COVID': 15,
+                'state': '미국'
+            }
+        ]
+    },
+    {
+        'date': '',
+        'COVID': [
+            {
+                'COVID': 250,
+                'state': '중국'
+            },
+            {
+                'COVID': 80,
+                'state': '일본'
+            },
+            {
+                'COVID': 121,
+                'state': '한국'
+            },
+            {
+                'COVID': 30,
+                'state': '미국'
+            }
+        ]
+    },
+    {
+        'date': '',
+        'COVID': [
+            {
+                'COVID': 380,
+                'state': '중국'
+            },
+            {
+                'COVID': 170,
+                'state': '일본'
+            },
+            {
+                'COVID': 192,
+                'state': '한국'
+            },
+            {
+                'COVID': 93,
+                'state': '미국'
+            }
+        ]
+    },
+    {
+        'date': '',
+        'COVID': [
+            {
+                'COVID': 561,
+                'state': '중국'
+            },
+            {
+                'COVID': 252,
+                'state': '일본'
+            },
+            {
+                'COVID': 241,
+                'state': '한국'
+            },
+            {
+                'COVID': 132,
+                'state': '미국'
+            }
+        ]
+    },
+    {
+        'date': '',
+        'COVID': [
+            {
+                'COVID': 783,
+                'state': '중국'
+            },
+            {
+                'COVID': 420,
+                'state': '일본'
+            },
+            {
+                'COVID': 294,
+                'state': '한국'
+            },
+            {
+                'COVID': 302,
+                'state': '미국'
+            }
+        ]
+    },
+]
 
 const TestChart = () => {
 
     const [data, setData] = useState([]);
     const [mount, setMount] = useState(false);
     const [topPosition, setTopPosition] = useState()
-    const colorSet = useRef([randomColor(), randomColor(), randomColor(), randomColor()])
+    const colorSet = useRef(Array(Json[0]['COVID'].length).fill().map((c, i) => randomColor()))
   
     useEffect(()=>{
         setMount(true)
@@ -68,161 +204,55 @@ const TestChart = () => {
 
         const rankPosition = Array(rank.length).fill()
         rank.map((p, i) => {
-            rankPosition[p - 1] = (i + 1) * 50;
+            rankPosition[p - 1] = i * 60;
         })
 
         setTopPosition(rankPosition)
     }
-
-    const Json = [
-        {
-            'date': '',
-            'COVID':[
-                {
-                    'COVID' : 50,
-                    'state' : '중국'
-                },
-                {
-                    'COVID' : 30,
-                    'state' : '일본'
-                },
-                {
-                    'COVID' : 10,
-                    'state' : '한국'
-                },
-                {
-                    'COVID' : 5,
-                    'state' : '미국'
-                }
-            ]
-        },
-        {
-            'date': '',
-            'COVID':[
-                {
-                    'COVID' : 110,
-                    'state' : '중국'
-                },
-                {
-                    'COVID' : 50,
-                    'state' : '일본'
-                },
-                {
-                    'COVID' : 80,
-                    'state' : '한국'
-                },
-                {
-                    'COVID' : 15,
-                    'state' : '미국'
-                }
-            ]
-        },
-        {
-            'date': '',
-            'COVID':[
-                {
-                    'COVID' : 250,
-                    'state' : '중국'
-                },
-                {
-                    'COVID' : 80,
-                    'state' : '일본'
-                },
-                {
-                    'COVID' : 121,
-                    'state' : '한국'
-                },
-                {
-                    'COVID' : 30,
-                    'state' : '미국'
-                }
-            ]
-        },
-        {
-            'date': '',
-            'COVID':[
-                {
-                    'COVID' : 380,
-                    'state' : '중국'
-                },
-                {
-                    'COVID' : 170,
-                    'state' : '일본'
-                },
-                {
-                    'COVID' : 192,
-                    'state' : '한국'
-                },
-                {
-                    'COVID' : 93,
-                    'state' : '미국'
-                }
-            ]
-        },
-        {
-            'date': '',
-            'COVID':[
-                {
-                    'COVID' : 561,
-                    'state' : '중국'
-                },
-                {
-                    'COVID' : 252,
-                    'state' : '일본'
-                },
-                {
-                    'COVID' : 241,
-                    'state' : '한국'
-                },
-                {
-                    'COVID' : 132,
-                    'state' : '미국'
-                }
-            ]
-        },
-        {
-            'date': '',
-            'COVID':[
-                {
-                    'COVID' : 783,
-                    'state' : '중국'
-                },
-                {
-                    'COVID' : 420,
-                    'state' : '일본'
-                },
-                {
-                    'COVID' : 294,
-                    'state' : '한국'
-                },
-                {
-                    'COVID' : 302,
-                    'state' : '미국'
-                }
-            ]
-        },
-    ]
 
     useEffect(() => {
         Json.forEach((d, i) => {
             setTimeout(() => {
                 sortChart(d.COVID)
                 setData(d.COVID)
-            }, 1000 * (i+1))
+            }, 1000 * i)
         })
     }, [mount])
 
     return(
         <ChartWrap className={mount && 'on'}>
-            { data.length >= 1 && data.map((p, i) => {
-                return(
-                    <ChartBarWrap key={i} top={`${topPosition[i]}px`}>
-                        <span>{data[i]['state']}</span>
-                        <ChartBar size={`${data[i]['COVID']}px`} color={colorSet.current[i]}></ChartBar>
-                        <span style={{ verticalAlign: 'middle' }}>{data[i]['COVID']}명</span>
-                    </ChartBarWrap>
-                )
-            })}
+            <ul style={{padding: '40px 60px'}}>
+                { Json[0]['COVID'].length >= 1 && Json[0]['COVID'].map((s, i) => {
+                    return(
+                            <li style={{display:'inline-block', paddingRight:'8px'}}>
+                                <div style={{ background: colorSet.current[i], width: '18px', height: '18px', display:'inline-block', verticalAlign:'bottom'}}></div>
+                                <span style={{paddingLeft: '4px',}}>{s.state}</span>
+                            </li>
+                    )
+                })}
+            </ul>
+            {/* <div style={{ paddingLeft: '60px', height: '40px', marginBottom: '40px', background: '#ddd', borderRight: 'solid 1px #aaa', overflow:'hidden'}}>
+                <span style={{ width: '100px', height: '100%', display: 'inline-block', textAlign: 'right', borderLeft: 'solid 1px #aaa', borderRight: 'solid 1px #aaa'}}></span>
+                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
+                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
+                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
+                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
+                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
+                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
+                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
+                <span style={{width:'100px', height:'100%', display:'inline-block', textAlign:'right', borderRight: 'solid 1px #aaa'}}></span>
+            </div> */}
+            <ChartBarWrap>
+                { data.length >= 1 && data.map((p, i) => {
+                    return(
+                        <ChartBarContainer key={i} top={`${topPosition[i]}px`}>
+                            <span style={{width:'60px', textAlign:'center', display:'inline-block'}}>{data[i]['state']}</span>
+                            <ChartBar size={`${data[i]['COVID']}px`} color={colorSet.current[i]}></ChartBar>
+                            <span style={{ verticalAlign: 'middle' }}>{data[i]['COVID']}명</span>
+                        </ChartBarContainer>
+                    )
+                })}
+            </ChartBarWrap>
         </ChartWrap>
     )
 }
