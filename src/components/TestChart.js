@@ -36,6 +36,10 @@ const ChartBar = styled.div`
     transition: all 300ms ease-in;
     display: inline-block;
     vertical-align: middle;
+
+    &:hover{
+        transform: scaleY(1.2);
+    }
 `;
 
 const Json = [
