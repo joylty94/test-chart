@@ -7,7 +7,8 @@ const ChartWrap = styled.div`
     height: 100%;
     opacity: 0;
     transition: opacity 2s;
-
+    width: 1700px;
+    margin: 0 auto;
     &.on{
         opacity: 1;
     }
@@ -107,7 +108,7 @@ const TestChart = () => {
         rank.map((p, i) => {
             rankPosition[p - 1] = i * 60;
         })
-        
+
         setTopCOVID(newDataArr[0]['COVID'])
         setTopPosition(rankPosition)
     },[])
@@ -155,7 +156,7 @@ const TestChart = () => {
                     }
                 })}
             </ul>
-            <ul style={{ paddingLeft: '100px', overflow: 'hidden', whiteSpace: 'nowrap', maxWidth: '1550px', overflow: 'hidden'}}>
+            <ul style={{ paddingLeft: '100px', overflow: 'hidden', whiteSpace: 'nowrap'}}>
                 <span>0</span>
                 {Array(15).fill(1).map((n, i) => {
                     return <li key={i} style={{ width: '100px', display: 'inline-block', textAlign: 'right', paddingBottom:'8px' }}><span style={{ marginRight: '-15px' }}>{100 * (i+1)}</span></li>
