@@ -18,10 +18,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -39,10 +35,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -97,10 +89,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -118,10 +106,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -176,10 +160,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -197,10 +177,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -255,10 +231,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -276,10 +248,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -334,10 +302,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -355,10 +319,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -413,10 +373,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -434,10 +390,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -492,10 +444,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -513,10 +461,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -571,10 +515,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -592,10 +532,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -650,10 +586,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -671,10 +603,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -729,10 +657,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -750,10 +674,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -808,10 +728,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -829,10 +745,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -887,10 +799,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -908,10 +816,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -966,10 +870,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -987,10 +887,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1045,10 +941,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1066,10 +958,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1124,10 +1012,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1145,10 +1029,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1203,10 +1083,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1224,10 +1100,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1282,10 +1154,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1303,10 +1171,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1361,10 +1225,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1382,10 +1242,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1440,10 +1296,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1461,10 +1313,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1519,10 +1367,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1540,10 +1384,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1598,10 +1438,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1619,10 +1455,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1677,10 +1509,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1698,10 +1526,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1756,10 +1580,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1777,10 +1597,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1835,10 +1651,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1856,10 +1668,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1914,10 +1722,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -1935,10 +1739,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -1993,10 +1793,6 @@ export const Json = [
             },
             {
                 "COVID": 0,
-                "state": "Brazil"
-            },
-            {
-                "COVID": 0,
                 "state": "Canada"
             },
             {
@@ -2014,10 +1810,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -2071,10 +1863,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 1,
                 "state": "Canada"
             },
@@ -2093,10 +1881,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -2150,10 +1934,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 1,
                 "state": "Canada"
             },
@@ -2172,10 +1952,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -2229,10 +2005,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 2,
                 "state": "Canada"
             },
@@ -2251,10 +2023,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -2308,10 +2076,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 3,
                 "state": "Canada"
             },
@@ -2330,10 +2094,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -2387,10 +2147,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 3,
                 "state": "Canada"
             },
@@ -2409,10 +2165,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 0,
@@ -2466,10 +2218,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 3,
                 "state": "Canada"
             },
@@ -2488,10 +2236,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -2545,10 +2289,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 4,
                 "state": "Canada"
             },
@@ -2567,10 +2307,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -2624,10 +2360,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 4,
                 "state": "Canada"
             },
@@ -2646,10 +2378,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -2703,10 +2431,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 4,
                 "state": "Canada"
             },
@@ -2725,10 +2449,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -2782,10 +2502,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 4,
                 "state": "Canada"
             },
@@ -2804,10 +2520,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -2861,10 +2573,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 5,
                 "state": "Canada"
             },
@@ -2883,10 +2591,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -2940,10 +2644,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 5,
                 "state": "Canada"
             },
@@ -2962,10 +2662,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3019,10 +2715,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 7,
                 "state": "Canada"
             },
@@ -3041,10 +2733,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3098,10 +2786,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 7,
                 "state": "Canada"
             },
@@ -3120,10 +2804,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3177,10 +2857,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 7,
                 "state": "Canada"
             },
@@ -3199,10 +2875,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3256,10 +2928,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 7,
                 "state": "Canada"
             },
@@ -3278,10 +2946,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3335,10 +2999,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 7,
                 "state": "Canada"
             },
@@ -3357,10 +3017,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3414,10 +3070,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 7,
                 "state": "Canada"
             },
@@ -3436,10 +3088,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3493,10 +3141,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 7,
                 "state": "Canada"
             },
@@ -3515,10 +3159,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3572,10 +3212,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 7,
                 "state": "Canada"
             },
@@ -3594,10 +3230,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3651,10 +3283,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 8,
                 "state": "Canada"
             },
@@ -3673,10 +3301,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3730,10 +3354,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 8,
                 "state": "Canada"
             },
@@ -3752,10 +3372,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3809,10 +3425,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 8,
                 "state": "Canada"
             },
@@ -3831,10 +3443,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3888,10 +3496,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 8,
                 "state": "Canada"
             },
@@ -3910,10 +3514,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -3967,10 +3567,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 8,
                 "state": "Canada"
             },
@@ -3989,10 +3585,6 @@ export const Json = [
             {
                 "COVID": 0,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -4046,10 +3638,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 8,
                 "state": "Canada"
             },
@@ -4068,10 +3656,6 @@ export const Json = [
             {
                 "COVID": 2,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -4125,10 +3709,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 9,
                 "state": "Canada"
             },
@@ -4147,10 +3727,6 @@ export const Json = [
             {
                 "COVID": 5,
                 "state": "Iran"
-            },
-            {
-                "COVID": 0,
-                "state": "Israel"
             },
             {
                 "COVID": 3,
@@ -4204,10 +3780,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 9,
                 "state": "Canada"
             },
@@ -4226,10 +3798,6 @@ export const Json = [
             {
                 "COVID": 18,
                 "state": "Iran"
-            },
-            {
-                "COVID": 1,
-                "state": "Israel"
             },
             {
                 "COVID": 17,
@@ -4283,10 +3851,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 9,
                 "state": "Canada"
             },
@@ -4305,10 +3869,6 @@ export const Json = [
             {
                 "COVID": 28,
                 "state": "Iran"
-            },
-            {
-                "COVID": 1,
-                "state": "Israel"
             },
             {
                 "COVID": 79,
@@ -4362,10 +3922,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 9,
                 "state": "Canada"
             },
@@ -4384,10 +3940,6 @@ export const Json = [
             {
                 "COVID": 43,
                 "state": "Iran"
-            },
-            {
-                "COVID": 2,
-                "state": "Israel"
             },
             {
                 "COVID": 132,
@@ -4441,10 +3993,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 0,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 11,
                 "state": "Canada"
             },
@@ -4463,10 +4011,6 @@ export const Json = [
             {
                 "COVID": 61,
                 "state": "Iran"
-            },
-            {
-                "COVID": 2,
-                "state": "Israel"
             },
             {
                 "COVID": 229,
@@ -4520,10 +4064,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 1,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 11,
                 "state": "Canada"
             },
@@ -4542,10 +4082,6 @@ export const Json = [
             {
                 "COVID": 95,
                 "state": "Iran"
-            },
-            {
-                "COVID": 2,
-                "state": "Israel"
             },
             {
                 "COVID": 322,
@@ -4599,10 +4135,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 1,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 12,
                 "state": "Canada"
             },
@@ -4621,10 +4153,6 @@ export const Json = [
             {
                 "COVID": 139,
                 "state": "Iran"
-            },
-            {
-                "COVID": 2,
-                "state": "Israel"
             },
             {
                 "COVID": 400,
@@ -4678,10 +4206,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 1,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 14,
                 "state": "Canada"
             },
@@ -4700,10 +4224,6 @@ export const Json = [
             {
                 "COVID": 245,
                 "state": "Iran"
-            },
-            {
-                "COVID": 3,
-                "state": "Israel"
             },
             {
                 "COVID": 650,
@@ -4757,10 +4277,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 1,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 16,
                 "state": "Canada"
             },
@@ -4779,10 +4295,6 @@ export const Json = [
             {
                 "COVID": 388,
                 "state": "Iran"
-            },
-            {
-                "COVID": 7,
-                "state": "Israel"
             },
             {
                 "COVID": 888,
@@ -4836,10 +4348,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 2,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 20,
                 "state": "Canada"
             },
@@ -4858,10 +4366,6 @@ export const Json = [
             {
                 "COVID": 593,
                 "state": "Iran"
-            },
-            {
-                "COVID": 7,
-                "state": "Israel"
             },
             {
                 "COVID": 1128,
@@ -4915,10 +4419,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 2,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 24,
                 "state": "Canada"
             },
@@ -4937,10 +4437,6 @@ export const Json = [
             {
                 "COVID": 978,
                 "state": "Iran"
-            },
-            {
-                "COVID": 10,
-                "state": "Israel"
             },
             {
                 "COVID": 1689,
@@ -5144,10 +4640,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 1,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 33,
                 "state": "Canada"
             },
@@ -5166,10 +4658,6 @@ export const Json = [
             {
                 "COVID": 2922,
                 "state": "Iran"
-            },
-            {
-                "COVID": 5,
-                "state": "Israel"
             },
             {
                 "COVID": 3089,
@@ -5227,10 +4715,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 6,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 45,
                 "state": "Canada"
             },
@@ -5249,10 +4733,6 @@ export const Json = [
             {
                 "COVID": 3513,
                 "state": "Iran"
-            },
-            {
-                "COVID": 7,
-                "state": "Israel"
             },
             {
                 "COVID": 3858,
@@ -5310,10 +4790,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 11,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 51,
                 "state": "Canada"
             },
@@ -5332,10 +4808,6 @@ export const Json = [
             {
                 "COVID": 4747,
                 "state": "Iran"
-            },
-            {
-                "COVID": 9,
-                "state": "Israel"
             },
             {
                 "COVID": 4636,
@@ -5393,10 +4865,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 11,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 57,
                 "state": "Canada"
             },
@@ -5415,10 +4883,6 @@ export const Json = [
             {
                 "COVID": 5823,
                 "state": "Iran"
-            },
-            {
-                "COVID": 15,
-                "state": "Israel"
             },
             {
                 "COVID": 5883,
@@ -5476,10 +4940,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 23,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 62,
                 "state": "Canada"
             },
@@ -5498,10 +4958,6 @@ export const Json = [
             {
                 "COVID": 6566,
                 "state": "Iran"
-            },
-            {
-                "COVID": 29,
-                "state": "Israel"
             },
             {
                 "COVID": 7375,
@@ -5634,10 +5090,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 9,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 93,
                 "state": "Canada"
             },
@@ -5656,10 +5108,6 @@ export const Json = [
             {
                 "COVID": 8042,
                 "state": "Iran"
-            },
-            {
-                "COVID": 31,
-                "state": "Israel"
             },
             {
                 "COVID": 10149,
@@ -5717,10 +5165,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 27,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 103,
                 "state": "Canada"
             },
@@ -5739,10 +5183,6 @@ export const Json = [
             {
                 "COVID": 9000,
                 "state": "Iran"
-            },
-            {
-                "COVID": 43,
-                "state": "Israel"
             },
             {
                 "COVID": 12462,
@@ -5804,10 +5244,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 52,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 138,
                 "state": "Canada"
             },
@@ -5826,10 +5262,6 @@ export const Json = [
             {
                 "COVID": 10075,
                 "state": "Iran"
-            },
-            {
-                "COVID": 57,
-                "state": "Israel"
             },
             {
                 "COVID": 15113,
@@ -5891,10 +5323,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 73,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 176,
                 "state": "Canada"
             },
@@ -5913,10 +5341,6 @@ export const Json = [
             {
                 "COVID": 11364,
                 "state": "Iran"
-            },
-            {
-                "COVID": 77,
-                "state": "Israel"
             },
             {
                 "COVID": 17660,
@@ -5974,10 +5398,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 96,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 244,
                 "state": "Canada"
             },
@@ -5996,10 +5416,6 @@ export const Json = [
             {
                 "COVID": 12729,
                 "state": "Iran"
-            },
-            {
-                "COVID": 139,
-                "state": "Israel"
             },
             {
                 "COVID": 17750,
@@ -6057,10 +5473,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 175,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 304,
                 "state": "Canada"
             },
@@ -6079,10 +5491,6 @@ export const Json = [
             {
                 "COVID": 13938,
                 "state": "Iran"
-            },
-            {
-                "COVID": 211,
-                "state": "Israel"
             },
             {
                 "COVID": 23980,
@@ -6144,10 +5552,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 209,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 424,
                 "state": "Canada"
             },
@@ -6166,10 +5570,6 @@ export const Json = [
             {
                 "COVID": 14991,
                 "state": "Iran"
-            },
-            {
-                "COVID": 221,
-                "state": "Israel"
             },
             {
                 "COVID": 27980,
@@ -6231,10 +5631,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 266,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 569,
                 "state": "Canada"
             },
@@ -6253,10 +5649,6 @@ export const Json = [
             {
                 "COVID": 16169,
                 "state": "Iran"
-            },
-            {
-                "COVID": 388,
-                "state": "Israel"
             },
             {
                 "COVID": 31506,
@@ -6318,10 +5710,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 403,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 690,
                 "state": "Canada"
             },
@@ -6340,10 +5728,6 @@ export const Json = [
             {
                 "COVID": 17361,
                 "state": "Iran"
-            },
-            {
-                "COVID": 394,
-                "state": "Israel"
             },
             {
                 "COVID": 35713,
@@ -6405,10 +5789,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 596,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 846,
                 "state": "Canada"
             },
@@ -6427,10 +5807,6 @@ export const Json = [
             {
                 "COVID": 18407,
                 "state": "Iran"
-            },
-            {
-                "COVID": 638,
-                "state": "Israel"
             },
             {
                 "COVID": 41035,
@@ -6492,10 +5868,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 879,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 971,
                 "state": "Canada"
             },
@@ -6514,10 +5886,6 @@ export const Json = [
             {
                 "COVID": 19644,
                 "state": "Iran"
-            },
-            {
-                "COVID": 673,
-                "state": "Israel"
             },
             {
                 "COVID": 47021,
@@ -6579,10 +5947,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 1103,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 1231,
                 "state": "Canada"
             },
@@ -6601,10 +5965,6 @@ export const Json = [
             {
                 "COVID": 20610,
                 "state": "Iran"
-            },
-            {
-                "COVID": 844,
-                "state": "Israel"
             },
             {
                 "COVID": 53578,
@@ -6666,10 +6026,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 1521,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 1430,
                 "state": "Canada"
             },
@@ -6688,10 +6044,6 @@ export const Json = [
             {
                 "COVID": 21638,
                 "state": "Iran"
-            },
-            {
-                "COVID": 1032,
-                "state": "Israel"
             },
             {
                 "COVID": 59138,
@@ -6753,10 +6105,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 1866,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 1646,
                 "state": "Canada"
             },
@@ -6775,10 +6123,6 @@ export const Json = [
             {
                 "COVID": 23049,
                 "state": "Iran"
-            },
-            {
-                "COVID": 1403,
-                "state": "Israel"
             },
             {
                 "COVID": 63927,
@@ -6840,10 +6184,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 2176,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 1959,
                 "state": "Canada"
             },
@@ -6862,10 +6202,6 @@ export const Json = [
             {
                 "COVID": 24811,
                 "state": "Iran"
-            },
-            {
-                "COVID": 1891,
-                "state": "Israel"
             },
             {
                 "COVID": 69176,
@@ -6927,10 +6263,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 2408,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 3385,
                 "state": "Canada"
             },
@@ -6949,10 +6281,6 @@ export const Json = [
             {
                 "COVID": 27017,
                 "state": "Iran"
-            },
-            {
-                "COVID": 2330,
-                "state": "Israel"
             },
             {
                 "COVID": 74386,
@@ -7014,10 +6342,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 2890,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 4018,
                 "state": "Canada"
             },
@@ -7036,10 +6360,6 @@ export const Json = [
             {
                 "COVID": 29406,
                 "state": "Iran"
-            },
-            {
-                "COVID": 2627,
-                "state": "Israel"
             },
             {
                 "COVID": 80539,
@@ -7101,10 +6421,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 3392,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 4689,
                 "state": "Canada"
             },
@@ -7123,10 +6439,6 @@ export const Json = [
             {
                 "COVID": 32332,
                 "state": "Iran"
-            },
-            {
-                "COVID": 2996,
-                "state": "Israel"
             },
             {
                 "COVID": 86498,
@@ -7188,10 +6500,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 3879,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 5386,
                 "state": "Canada"
             },
@@ -7210,10 +6518,6 @@ export const Json = [
             {
                 "COVID": 35408,
                 "state": "Iran"
-            },
-            {
-                "COVID": 3580,
-                "state": "Israel"
             },
             {
                 "COVID": 92472,
@@ -7275,10 +6579,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 4231,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 6255,
                 "state": "Canada"
             },
@@ -7297,10 +6597,6 @@ export const Json = [
             {
                 "COVID": 38309,
                 "state": "Iran"
-            },
-            {
-                "COVID": 4208,
-                "state": "Israel"
             },
             {
                 "COVID": 97689,
@@ -7362,10 +6658,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 4554,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 7424,
                 "state": "Canada"
             },
@@ -7384,10 +6676,6 @@ export const Json = [
             {
                 "COVID": 41495,
                 "state": "Iran"
-            },
-            {
-                "COVID": 4434,
-                "state": "Israel"
             },
             {
                 "COVID": 101739,
@@ -7449,10 +6737,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 5692,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 8536,
                 "state": "Canada"
             },
@@ -7471,10 +6755,6 @@ export const Json = [
             {
                 "COVID": 44606,
                 "state": "Iran"
-            },
-            {
-                "COVID": 4877,
-                "state": "Israel"
             },
             {
                 "COVID": 105792,
@@ -7536,10 +6816,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 6811,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 9595,
                 "state": "Canada"
             },
@@ -7558,10 +6834,6 @@ export const Json = [
             {
                 "COVID": 47593,
                 "state": "Iran"
-            },
-            {
-                "COVID": 5552,
-                "state": "Israel"
             },
             {
                 "COVID": 110574,
@@ -7623,10 +6895,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 7885,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 11268,
                 "state": "Canada"
             },
@@ -7645,10 +6913,6 @@ export const Json = [
             {
                 "COVID": 50468,
                 "state": "Iran"
-            },
-            {
-                "COVID": 6213,
-                "state": "Israel"
             },
             {
                 "COVID": 115242,
@@ -7710,10 +6974,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 9031,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 12519,
                 "state": "Canada"
             },
@@ -7732,10 +6992,6 @@ export const Json = [
             {
                 "COVID": 50468,
                 "state": "Iran"
-            },
-            {
-                "COVID": 7389,
-                "state": "Israel"
             },
             {
                 "COVID": 119827,
@@ -7797,10 +7053,6 @@ export const Json = [
                 "state": "Belgium"
             },
             {
-                "COVID": 10253,
-                "state": "Brazil"
-            },
-            {
                 "COVID": 13882,
                 "state": "Canada"
             },
@@ -7819,10 +7071,6 @@ export const Json = [
             {
                 "COVID": 55743,
                 "state": "Iran"
-            },
-            {
-                "COVID": 7979,
-                "state": "Israel"
             },
             {
                 "COVID": 124632,
