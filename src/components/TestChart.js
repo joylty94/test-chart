@@ -122,7 +122,6 @@ const TestChart = () => {
             interval.current = setTimeout(() => {
                 setdate([d.year, d.month, d.day])
                 sortChart(d.COVID)
-                //setData(d.COVID)
             }, 900 * i)
         })
     }, [])
@@ -136,7 +135,8 @@ const TestChart = () => {
         if (topCOVID <= 1500){
             return currentPx;
         }else if( topCOVID > 1500){
-            return Math.round(currentPx / topCOVID * 1500)
+            // return (currentPx / topCOVID * 1500).toFixed(2)
+            return Math.ceil(currentPx / topCOVID * 1500)
         }
     }, [topCOVID])
 
