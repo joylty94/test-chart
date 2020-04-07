@@ -15,6 +15,8 @@ const ChartWrap = styled.div`
 `
 const ChartBarWrap = styled.div`
     position:relative;
+    overflow: hidden;
+    height: 600px;
 
     &::after{
         content: '';
@@ -24,7 +26,7 @@ const ChartBarWrap = styled.div`
 `;
 
 const ChartBarContainer = styled.div`
-    transition: all 300ms ease-in;
+    transition: all 800ms ease-in;
     display: inline-block;
     vertical-align: middle;
     position: absolute;
@@ -35,15 +37,15 @@ const ChartBar = styled.div`
     width: ${props => props.size};
     height: 40px;
     background-color: ${props => props.color};
-    transition: all 700ms ease-in;
+    transition: all 900ms ease-in;
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
     max-width: 1500px;
-
-    &:hover{
+    border-radius: 30px;
+    /* &:hover{
         transform: scaleY(1.1);
-    }
+    } */
 `;
 
 const TestChart = () => {
@@ -54,7 +56,6 @@ const TestChart = () => {
     const [topPosition, setTopPosition] = useState()
     const [topCOVID, setTopCOVID] = useState()
     const colorSet = useRef(Array(Json[Json.length - 1]['COVID'].length).fill().map((c, i) => randomColor()))
-    //const colorSet = useRef(Array(Json[Json.length - 1]['COVID'].length).fill(() => randomColor()))
     let interval = useRef()
     const isMountChart = useRef(true);
 
@@ -69,8 +70,9 @@ const TestChart = () => {
             Json.forEach((d, i) => {
                 interval.current = setTimeout(() => {
                     setdate([d.year, d.month, d.day])
+                    // setData(d.COVID)
                     sortChart(d.COVID)
-                }, 600 * i)
+                }, 1500 * i)
             })
         }
         return () => {
@@ -131,13 +133,21 @@ const TestChart = () => {
         clearTimeout(interval.current);
     }, [])
 
-    const handlePx = (currentPx) => {
+    const handlePx = useCallback((currentPx) => {
         if (topCOVID <= 1500){
             return currentPx;
         }else if( topCOVID > 1500){
             return currentPx / topCOVID * 1500
         }
-    }
+    }, [topCOVID])
+
+    const handlePx2 = useCallback((currentPx) => {
+        if (topCOVID <= 1500){
+            return currentPx;
+        }else if( topCOVID > 1500){
+            return topCOVID / 5 / topCOVID * 1500
+        }
+    }, [topCOVID])
 
     return(
         <ChartWrap className={mount && 'on'}>
@@ -146,10 +156,10 @@ const TestChart = () => {
             )}
             <ul style={{ padding: '40px 100px'}}>
                 { data.length >= 1 && data.map((s, i) => {
-                    if(i < 15){
+                    if(i < 20){
                         return(
                                 <li style={{display:'inline-block', paddingRight:'18px', marginBottom:'5px'}} key={i}>
-                                    <div style={{ background: colorSet.current[i], width: '18px', height: '18px', display:'inline-block', verticalAlign:'bottom'}}></div>
+                                    <div style={{ background: colorSet.current[i], width: '28px', height: '18px', display:'inline-block', verticalAlign:'bottom', borderRadius: '10px'}}></div>
                                     <span style={{paddingLeft: '4px'}}>{s.state}</span>
                                 </li>
                         )
@@ -158,21 +168,21 @@ const TestChart = () => {
             </ul>
             <ul style={{ paddingLeft: '100px', overflow: 'hidden', whiteSpace: 'nowrap'}}>
                 <span>0</span>
-                {Array(15).fill(1).map((n, i) => {
-                    return <li key={i} style={{ width: '100px', display: 'inline-block', textAlign: 'right', paddingBottom:'8px' }}><span style={{ marginRight: '-15px' }}>{100 * (i+1)}</span></li>
+                {[1,2,3,4,5].map((n, i) => {
+                    return <li key={i} style={{ width: `${handlePx2(300)}px`, display: 'inline-block', textAlign: 'right', paddingBottom: '8px' }}><span style={{ marginRight: '-15px' }}>{topCOVID <= 1500 ? (handlePx2(300) * n) : Math.round(topCOVID / (5 - i))}</span></li>
                 })}
             </ul>
             <ChartBarWrap>
                 { data.length >= 1 && data.map((p, i) => {
-                    if(i < 15){
+                    // if(i < 10){
                         return(
                             <ChartBarContainer key={i} top={topPosition &&`${topPosition[i]}px`}>
-                                <span style={{width:'100px', textAlign:'center', display:'inline-block', overflow:'hidden'}}>{p['state']}</span>
+                                <span style={{width:'100px', textAlign:'center', display:'inline-block', overflow:'hidden', height:'40px', lineHeight:'40px', verticalAlign:'middle'}}>{p['state']}</span>
                                 <ChartBar size={`${handlePx(p['COVID'])}px`} color={colorSet.current[i]}></ChartBar>
                                 <span style={{ width: '60px', verticalAlign:'middle', textAlign: 'center', display: 'inline-block' }}>{p['COVID']}명</span>
                             </ChartBarContainer>
                         )
-                    }
+                    // }
                 })}
             </ChartBarWrap>
         </ChartWrap>
