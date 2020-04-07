@@ -26,7 +26,7 @@ const ChartBarWrap = styled.div`
 `;
 
 const ChartBarContainer = styled.div`
-    transition: all 800ms ease-in;
+    transition: all 700ms ease-in;
     display: inline-block;
     vertical-align: middle;
     position: absolute;
@@ -37,7 +37,7 @@ const ChartBar = styled.div`
     width: ${props => props.size};
     height: 40px;
     background-color: ${props => props.color};
-    transition: all 700ms ease-in;
+    transition: all 900ms ease-in;
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
@@ -56,7 +56,7 @@ const TestChart = () => {
     const [topPosition, setTopPosition] = useState()
     const [topCOVID, setTopCOVID] = useState()
     const colorSet = useRef(Array(Json[Json.length - 1]['COVID'].length).fill().map((c, i) => randomColor()))
-    let interval = useRef()
+    const interval = useRef()
     const isMountChart = useRef(true);
 
     useEffect(()=>{
@@ -151,7 +151,7 @@ const TestChart = () => {
     return(
         <ChartWrap className={mount && 'on'}>
             { date && (
-                <div style={{ padding: '40px 42px 0 60px' }}>DATE : {date[0]}.{date[1]}.{date[2]} {<><button onClick={onClickStop}>stop</button><button onClick={onClickReset}>Reset</button></>}</div>
+                <div style={{ padding: '40px 42px 0 60px' }}>DATE : {date[0]}.{date[1]}.{date[2]} {<button onClick={onClickReset}>Reset</button>}</div>
             )}
             <ul style={{ padding: '40px 100px'}}>
                 { data.length >= 1 && data.map((s, i) => {
